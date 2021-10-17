@@ -1,0 +1,18 @@
+<button class="btn btn-primary" (click)="goToPosts()">Ir a Posts</button>
+
+<div  *ngIf="usuarios">
+    <table class="table" >
+        <thead>
+            <th></th>
+            <th>Name</th>
+            <th>Username</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td><button class="btn btn-primary" (click)="verPosts(usuario.id)">Ver Posts</button></td>
+                <td>{{ usuario.name }}</td>
+                <td>{{ usuario.username }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

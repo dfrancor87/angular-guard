@@ -1,0 +1,21 @@
+<h3>Componente posts</h3>
+<button class="btn btn-primary" (click)="goToUsuarios()">Ir a usuarios</button>
+
+
+
+<div *ngIf="posts">
+    <table class="table">
+        <thead>
+            <th>User Id</th>
+            <th>Title</th>
+            <th>Body</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{ post.userId }}</td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.body }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

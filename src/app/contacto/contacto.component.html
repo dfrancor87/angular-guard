@@ -1,0 +1,8 @@
+<p>contacto works!</p>
+<div class="col-3 cotainer-contacto">
+    <div class="form-group">
+        <label for="">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" (input)="mensaje = $event.target.value"></textarea>
+    </div>
+    <button class="btn btn-primary" (click)="enviar()">Enviar</button>
+</div>
